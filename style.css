@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #53eced;
+  background-image: linear-gradient(205deg, #53eced 0%, #31678a 50%, #1e8792 100%);
+  background-repeat: no-repeat;  
+  background-size: cover;
+
+}
+
+/* music class */
+
+.container {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 15px;
+}
+.image-container {
+}
+/* .span{
+    background: transparent;
+}
+.span1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    border: 1px solid #fff;
+    border-radius: 38% 63% 62% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    padding: 20px;
+    animation: animate 9s infinite;
+    animation-play-state: paused;
+  }
+  .span1 {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+  .span2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    border: 1px solid #fff;
+    border-radius: 38% 63% 62% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    padding: 20px;
+    animation: imageRotate 8s infinite;
+    animation-play-state: paused;
+  }
+  .span2 {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+  .span3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    border: 1px solid #fff;
+    border-radius: 38% 63% 62% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    padding: 20px;
+    animation: animate 10s infinite;
+    animation-play-state: paused;
+  }
+  .span3 {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.7);
+  }*/
+.sound-image{
+    padding: 0;
+    margin: 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: auto;
+    margin-bottom: 15px;
+  } 
+  @keyframes imageRotate {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes animate {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+  
+  .container.play img {
+    animation-play-state: running;
+  }
+  .container.play span {
+    animation-play-state: running;
+  }
+  
+.progress-container {
+    width: 100%;
+    height: 4px;
+    background: #fff;
+    border-radius: 15px;
+}
+.progress {
+    height: 100%;
+    background: turquoise;
+    width: 10px;
+    border-radius: 15px;
+}
+.time {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+.nav {
+}
+.btn {
+}
+.fas {
+}
+.fa-backward {
+}
+.big {
+}
+.fa-play {
+}
+.fa-forward {
+}
+.center {
+}
+.form-element {
+}
+.range {
+}
