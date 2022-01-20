@@ -1,16 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music player</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
 
-    <!-- js -->
-    <script src="app.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Player</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <section class="section">
+    <div class="container" id="container">
+      <h1 id="title">On Top Of The World</h1>
+
+      <div class="image-container">
+        <span class="span span1"></span>
+        <span class="span span2"></span>
+        <span class="span span3"></span>
+        <img src="./images/Adele - Rolling In The Deep.jfif" alt="album image" id="cover" />
+      </div>
+
+      <div class="progress-container" id="progress-container">
+        <div class="progress" id="progress"></div>
+      </div>
+
+      <audio src="" id="audio"></audio>
+      <div class="time">
+        <span id="start">00:00</span>
+        <span id="end">00:00</span>
+      </div>
+
+
+
+      <div class="nav">
+        <button class="btn" id="prev">
+          <i class="fas fa-backward"></i>
+        </button>
+        <button class="btn big" id="play">
+          <i class="fas fa-play"></i>
+        </button>
+        <button class="btn" id="next">
+          <i class="fas fa-forward"></i>
+        </button>
+      </div>
+      <form>
+        <div class="center">
+          <div class="form-element">
+            <input type="range" class="range" min="0" max="100" value="90" step="10" id="volume"
+              oninput="rangevalue.textContent = this.value">
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- js -->
+  <script src="app.js "></script>
 </body>
+
 </html>
