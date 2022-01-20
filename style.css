@@ -319,6 +319,7 @@ box-shadow: 0px 0px 8px 3px rgba(34, 60, 80, 0.35);
     }
     .container{
         padding: 40px;
+        margin-top: 10px;
     }
     .bubbles span {
         width: 30px;
