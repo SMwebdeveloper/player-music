@@ -24,7 +24,7 @@ body {
   background-size: cover;
 }
 
-/* music class */
+/* bubbles span */
 .bubbles {
   position: absolute;
   bottom: 100px;
@@ -92,6 +92,7 @@ body {
     transform: translateX(-450px);
   }
 }
+/* container section */
 .container {
   padding: 20px;
   background: rgba(255, 255, 255, 0.2);
@@ -179,6 +180,8 @@ body {
     border: none;
     background-color: rgba(255, 255, 255, 0.7);
   }
+ 
+  /* image-container:keyframes */
   .sound-image {
     width: inherit;
     height: inherit;
@@ -190,7 +193,6 @@ body {
     animation: imageRotate 10s linear infinite;
     animation-play-state: paused;
 }
-  /* image-container:keyframes */
   @keyframes imageRotate {
     from {
       transform: rotate(0);
@@ -214,7 +216,7 @@ body {
   .container.play span {
     animation-play-state: running;
   }
-
+/* progress content */
 .progress-container {
   width: 100%;
   height: 4px;
@@ -228,6 +230,7 @@ body {
   width: 10px;
   border-radius: 15px;
 }
+/* time */
 .time {
   width: 100%;
   display: flex;
@@ -236,6 +239,7 @@ body {
   font-weight: 500;
   color: rgba(255, 255, 255, 0.7);
 }
+/* navigation content */
 .nav {
   width: 100%;
   display: flex;
@@ -267,7 +271,7 @@ box-shadow: 0px 0px 8px 3px rgba(34, 60, 80, 0.35);
 .big {
   font-size: 18px;
 }
-
+/* range */
 .center {
   padding: 5px;
   width: 100%;
@@ -275,7 +279,7 @@ box-shadow: 0px 0px 8px 3px rgba(34, 60, 80, 0.35);
 .form-element input[type="range"] {
   appearance: none;
   width: 100%;
-  height: 20px;
+  height: 15px;
   border-radius: 15px;
   background-color: #fff;
   outline: none;
@@ -299,3 +303,52 @@ box-shadow: 0px 0px 8px 3px rgba(34, 60, 80, 0.35);
   box-shadow: 0px 0px 11px 1px rgba(4, 4, 4, 0.27);
 }
 
+/* mediaquery */
+@media (max-width:590px) {
+    .bubbles span{
+        width: 38px;
+        height: 38px;
+    }
+    
+}
+@media (max-width:450px) {
+    body{
+        background-color: #10646d;
+        background-image: linear-gradient(338deg, #10646d 0%, #5dd8e2 50%, #0c8a90 100%);
+
+    }
+    .bubbles span {
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+    }
+     .title{
+         font-size: 20px;
+         font-weight: 200px;
+     }
+     .image-container{
+         width: 130px;
+         height: 130px;
+     }
+     .time{
+         font-size: 14px;
+         color: rgba(255, 255, 255, 0.8);
+     }
+     .progress  {
+         background:#1e8792;
+     }
+     .btn{
+         font-size:12px;
+     }
+     .big{
+         font-size: 14px;
+     }
+     .form-element input[type="range"] {
+         height: 10px;
+     }
+     .form-element input[type="range"]::-webkit-slider-thumb {
+        background-color: #1e8792;
+        box-shadow: -350px 0px 0px 340px #1e8792;
+       
+      }
+}
