@@ -16,10 +16,19 @@
   </head>
 
   <body>
-    <div class="container" id="container">
+    <div class="bubbles">
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+        <span class="four"></span>
+        <span class="five"></span>
+        <span class="six"></span>
+        <span class="seven"></span>
+      </div>
+    <div class="container play" id="container">
       <h1 class="title" id="title">On Top Of The World</h1>
 
-      <div class="image-container">
+      <div class="image-container play">
         <span class="span span1"></span>
         <span class="span span2"></span>
         <span class="span span3"></span>
@@ -54,16 +63,11 @@
       <form>
         <div class="center">
           <div class="form-element">
-            <input
-              type="range"
-              class="range"
-              min="0"
-              max="100"
-              value="90"
-              step="10"
-              id="volume"
-              oninput="rangevalue.textContent = this.value"
-            />
+            <input type="range" 
+            min="0" max="100" 
+            value="50" 
+            step="1" 
+            id="range" oninput="rangevalue.textContent = this.value">
           </div>
         </div>
       </form>
