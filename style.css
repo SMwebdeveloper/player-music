@@ -327,7 +327,7 @@ box-shadow: 0px 0px 8px 3px rgba(34, 60, 80, 0.35);
         border-radius: 5px;
     }
      .title{
-         font-size: 25px;
+       
          font-weight: 200px;
          color: rgba(255, 255, 255, 0.8);
      }
@@ -336,18 +336,13 @@ box-shadow: 0px 0px 8px 3px rgba(34, 60, 80, 0.35);
          height: 130px;
      }
      .time{
-         font-size: 16px;
+        
          color: rgba(255, 255, 255, 0.8);
      }
      .progress  {
          background:#1e8792;
      }
-     .btn{
-         font-size:12px;
-     }
-     .big{
-         font-size: 14px;
-     }
+    
      .form-element input[type="range"] {
          height: 10px;
      }
