@@ -325,6 +325,7 @@ box-shadow: 0px 0px 8px 3px rgba(34, 60, 80, 0.35);
         height: 500px;
         padding: 40px;
         margin-top: 10px;
+        width: 300px;
     }
     .bubbles{
         bottom:20px;
